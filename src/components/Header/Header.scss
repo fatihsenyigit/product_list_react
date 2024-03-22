@@ -1,5 +1,6 @@
 
 @import '../../scss/variables';
+@import '../../scss/mixins';
 
 .header-title {
     color: $secondaryColor;
@@ -8,10 +9,7 @@
 }
 
 .header-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    @include myDisplay();
     button {
         padding: .5rem 1rem;
         border-radius: 20px;

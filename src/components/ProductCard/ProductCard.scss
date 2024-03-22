@@ -53,7 +53,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    transform: translateX(5%);
+    transform: translateX(4%);
     border-radius: 10px;
     font-size: 1.4rem;
     z-index: 3;
@@ -65,5 +65,5 @@
 
 .cover-container:hover + .title {
   opacity: 1;
-  transform: translatex(calc(-1%));
+  transform: translatex(calc(-.5%));
 }

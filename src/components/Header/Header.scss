@@ -1,0 +1,24 @@
+
+@import '../../scss/variables';
+
+.header-title {
+    color: $secondaryColor;
+    text-align: center;
+    margin: 20px;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    button {
+        padding: .5rem 1rem;
+        border-radius: 20px;
+        transition: all .5s;
+        &:hover {
+            cursor: pointer;
+            background-color: $primaryColor;
+        }
+    }
+}

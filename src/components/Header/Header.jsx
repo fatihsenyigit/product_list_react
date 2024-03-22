@@ -3,8 +3,8 @@ import React from 'react'
 const Header = () => {
   return (
     <div>
-        <h1>Product List</h1>
-        <div className="buttons">
+        <h1 className='header-title'>Product List</h1>
+        <div className="header-buttons">
             <button>ALL</button>
             <button>ELECTRONICS</button>
             <button>JEWELERY</button>

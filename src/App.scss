@@ -1,7 +1,4 @@
-@use './components/Header/Header.scss';
-@use './components/ProductCard/ProductCard.scss';
-@use './scss/mixins';
-@use './scss/reset';
-@use './scss/variables';
-
+@import './components/Header/Header.scss';
+@import './components/ProductCard/ProductCard.scss';
+@import './scss/mixins', './scss/reset', './scss/variables';
 

@@ -9,7 +9,6 @@ const ProductCard = () => {
             return (
               <div className="product-container" key={e.id}>
                 <img src={e.image} alt="" />
-                <div className="cover-container"></div>
                 <p className="title">{e.title}</p>
                 <h3>{e.price} $</h3>
               </div>

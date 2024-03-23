@@ -1,5 +1,11 @@
 @import "../../scss/mixins";
 
+.product-title {
+    color: $secondaryColor;
+    text-align: center;
+    margin-top: 30px
+}
+
 .container {
   @include myDisplay();
 }

@@ -1,24 +1,13 @@
-import React from 'react';
-import { products } from '../../helper/data';
+import React from "react";
 
-
-const ProductCard = () => {
+const ProductCard = ({product}) => {
   return (
-    <>
-      <h1 className="product-title">Product List</h1>
-      <div className="container">
-        {products.map((e) => {
-          return (
-            <div className="product-container" key={e.id}>
-              <img src={e.image} alt="" />
-              <p className="title">{e.title}</p>
-              <h3>{e.price} $</h3>
-            </div>
-          );
-        })}
-      </div>
-    </>
+    <div className="product-container">
+      <img src={product.image} alt="" />
+      <p className="title">{product.title}</p>
+      <h3>{product.price} $</h3>
+    </div>
   );
-}
+};
 
-export default ProductCard
+export default ProductCard;

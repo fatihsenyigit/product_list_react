@@ -8,6 +8,8 @@
 
 .container {
   @include myDisplay();
+  max-width: 1500px;
+  margin: auto;
 }
 .product-container {
   width: 250px;
@@ -24,6 +26,7 @@
     transition: all .8s;
     &:hover {
       filter: none;
+      cursor: pointer;
     }
   }
 

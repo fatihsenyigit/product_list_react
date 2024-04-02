@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {categories, products} from '../../helper/data.js'
 import ProductCard from '../ProductCard/ProductCard.jsx'
 
 const Header = () => {
+  const [search, setsearch] = useState('')
+
+
+  const searchData = products.filter((product)=>product.title.toLowerCase().includes(search.trim().toLowerCase()))
+
   return (
     <div>
       <h1 className="header-title">Categories</h1>
@@ -17,10 +22,12 @@ const Header = () => {
           className="product-input"
           type="search"
           placeholder="search product"
+          value={search}
+          onChange={(e) => setsearch(e.target.value)}
         />
       </div>
       <div className="container">
-        {products.map((product) => {
+        {searchData.map((product) => {
           return <ProductCard product={product}></ProductCard>;
         })}
       </div>

@@ -21,3 +21,21 @@
         }
     }
 }
+
+.input-container {
+    max-width: 800px;
+    margin: 1rem auto;
+    @include myDisplay();
+    
+    .product-input {
+        width: 100%;
+        padding: .5rem 1rem;
+        font-weight: 500;
+        font-size: 1rem;
+        border-radius: 1rem;
+        border: 1px solid $primaryColor;
+        &:focus {
+           outline: 2px solid $secondaryColor;
+        }
+    }
+}
